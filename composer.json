@@ -1,0 +1,15 @@
+{
+    "name": "vendor/SmartHomeV2",
+    "description": "Система умный дом",
+    "authors": [
+        {
+            "name": "Грибов Павел",
+            "email": "donpadlo@gmail.com"
+        }
+    ],
+    "require": {
+        "twbs/bootstrap": "5.0.0-beta2",
+        "components/jqueryui": "1.12.1",
+        "components/jquery": "3.4.1"
+    }
+}

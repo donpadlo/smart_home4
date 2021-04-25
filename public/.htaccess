@@ -1,0 +1,17 @@
+php_value post_max_size 520M
+php_value default_charset utf-8
+
+ErrorDocument 404  /client/404
+
+
+#<ifModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+
+    RewriteBase /
+    RewriteRule ^server/(.*) index.php?server=/$1 [L]
+    RewriteRule ^client/(.*) index.php?client=/$1 [QSA,L]
+#</ifModule>
+    Options All -Indexes
+    DirectoryIndex index.php
